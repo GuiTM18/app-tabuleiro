@@ -1,6 +1,9 @@
 import React, {Component} from "react";
 import { styles } from './styles';
-import {View, Text, Pressable, Image} from 'react-native';
+import {View, Text, Pressable,TouchableOpacity, Image} from 'react-native';
+import CronometroApp1 from "./cronometro1";
+import CronometroApp2 from "./cronometro2";
+import CronometroApp3 from "./cronometro3";
 
 class App extends Component{
   constructor(props) {
@@ -26,17 +29,24 @@ class App extends Component{
           <Text style={styles.textHeader}>Tabuleiro Matemático</Text>
         </View>
         
-        <Image source={require('./src/logo.png')} style={{ width: 200, height: 200, margin: 10}} />
+        <Image source={require('./src/logo.png')} style={{ width: 170, height: 170, margin: 10}} />
         <Text style={styles.textChallenge}> CLIQUE EM GIRAR PRA INICIAR</Text>
 
         <View style={styles.areaRandom}>
           <Text style={styles.textRandom}>{this.state.numRandom}</Text>
         </View>
 
-        <Pressable onPress={this.rodar} style={styles.button}>
+        <TouchableOpacity onPress={this.rodar} style={styles.button}>
           <Text style={{fontSize: 30, textAlign: 'center', letterSpacing: 5, color: '#FFF', textTransform: 'uppercase', fontWeight: 'bold'}}>GIRAR</Text>
-        </Pressable>
-
+        </TouchableOpacity>
+        
+      <CronometroApp1/>
+      <CronometroApp2/>
+      
+        <CronometroApp3  />
+     
+      
+      
       </View>
     )
   }

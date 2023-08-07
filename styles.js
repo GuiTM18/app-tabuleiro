@@ -10,15 +10,15 @@ const styles = StyleSheet.create({
     },
 
     textChallenge:{
-        fontSize: 32,
+        fontSize: 28,
         fontWeight: 'bold',
         color: '#fff',
         textAlign: 'center',
-        padding: 16,
+        padding: 10,
     },
     textHeader:{
-        fontSize: 50,
-        marginTop: 100,
+        fontSize: 40,
+        marginTop: 50,
         fontWeight: 'bold',
         textTransform: 'uppercase',
         textAlign: 'center',
@@ -30,31 +30,32 @@ const styles = StyleSheet.create({
     areaRandom:{
         marginTop: 20 ,
         backgroundColor: "#f111",
-        width: 150,
-        height: 150,
+        width: 110,
+        height: 110,
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: 10,
+        borderRadius: 15,
         borderWidth: 3,
         borderColor: '#fff',
         marginBottom: 20,
         
     },
+    
     textRandom:{
-        fontSize: 150,
+        fontSize: 120,
         fontWeight: 'bold',
         textAlign: 'center',
         color: '#fff',
-        marginTop: -12
+        marginTop: -20
     },
     button:{
-        width: 120,
+        width: 110,
         height: 50,
-        marginTop: 20,
-        backgroundColor: '#FF2066',
+        marginTop: 0,
+        backgroundColor: '#FF3776',
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 15,
+        borderRadius: 20,
         color: '#fff',
         
     },
